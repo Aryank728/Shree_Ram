@@ -1,0 +1,282 @@
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box !important;
+    text-align: center;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: #1976D2;
+}
+
+nav a {
+    color: #fff;
+    text-wrap: nowrap;
+
+}
+
+nav a:hover {
+    background-color: #1565C0;
+}
+
+.cta-container {
+    background-color: #1976D2;
+    color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.cta-container h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+
+.cta-container h5 {
+    font-size: 1.2em;
+    line-height: 1.6em;
+}
+
+.cta-container a.btn-large {
+    background-color: #FF5722;
+    font-size: 1.2em;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.icon-block {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    width: 300px;
+    text-align: center;
+}
+
+.icon-block img {
+    border-radius: 50%;
+    width: 180px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.icon-block h2 {
+    color: #FF5722;
+    margin-top: 20px;
+}
+
+.icon-block h5 {
+    font-size: 1em;
+    line-height: 1.4em;
+}
+
+/* Style for Sidenav Dropdown */
+.sidenav li {
+    padding: 15px 20px; /* Adjust padding as needed */
+    list-style: none;
+}
+
+.sidenav li a {
+    text-decoration: none;
+    color: #FF5722; /* Text color */
+    display: block;
+}
+
+.sidenav li a:hover {
+    background-color: #1565C0; /* Hover background color */
+}
+
+.sidenav .collapsible-body {
+    background-color: #1565C0; /* Dropdown background color */
+}
+
+
+
+
+#significance,
+#impact,
+#history {
+    background-color: #fff;
+    padding: 40px 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+}
+
+#significance h2,
+#impact h2,
+#history h2 {
+    color: #FF5722;
+}
+
+.quote-wrapper {
+    background-color: #FF5722;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 40px;
+    height: 190%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quote-wrapper h5 {
+    font-style: italic;
+    color: #fff;
+}
+
+.page-footer {
+    background-color: #1976D2;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.image-section,
+.image-section-2,
+.image-section-3 {
+    background-size: cover;
+    background-position: center;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    height: 900px;
+    margin-top: 40px;
+    position: relative;
+    text-align: center;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-section {
+    background-image: url("ramayan.jpg");
+}
+
+.image-section-2 {
+    background-image: url("ram-mandir.avif");
+}
+.image-section-3 {
+    background-image: url("hero-image.png");
+}
+
+.checkpoint h2 {
+    margin-bottom: 0.5em;
+}
+
+.title {
+    text-align: center;
+}
+
+.title p {
+    color: #0d71fc;
+    font-size: 1.3em;
+    letter-spacing: 2px;
+}
+
+.timeline {
+    margin: 5em auto;
+    /* background-color: #FF5722; */
+    max-width: 80vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.checkpoint {
+    max-width: 34em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 3em;
+}
+
+.checkpoint div {
+    border: 2px solid #FF5722;
+    border-radius: 1em;
+    padding: 1.5em;
+    background-color: #fff;
+}
+
+.checkpoint p {
+    line-height: 27px;
+    color: #FF5722;
+}
+
+.checkpoint:nth-child(odd),
+.checkpoint:nth-child(even) {
+    width: 70%;
+}
+
+.checkpoint:nth-child(odd),
+.checkpoint:nth-child(even) {
+    order: 1;
+}
+
+.checkpoint:nth-child(odd) {
+    margin-left: auto;
+}
+
+.checkpoint:nth-child(even) {
+    margin-right: auto;
+}
+
+.checkpoint:nth-child(odd)::before,
+.checkpoint:nth-child(even)::before {
+    content: '';
+    background: #FF5722;
+    width: 1em;
+    height: 1em;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+}
+
+.checkpoint:nth-child(odd)::before {
+    left: -3em;
+}
+
+.checkpoint:nth-child(even)::before {
+    right: -3em;
+}
+
+@media screen and (max-width: 1150px) {
+    .timeline .checkpoint,
+    .timeline .checkpoint:nth-child(odd),
+    .timeline .checkpoint:nth-child(even) {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+    }
+
+    .checkpoint div::before {
+        top: -0.5em;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
